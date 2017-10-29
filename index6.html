@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流布局</title>
+    <style>
+    *{
+        margin:0;padding:0;
+         box-sizing:border-box; 
+    }
+    html,body,.box{
+        height: 100%;
+    }
+   .box{
+      overflow: hidden;
+      position:relative;
+   }
+    header{
+        width: 100%;
+        height:44px;
+        background:#00FF00;
+    }
+    footer{
+        width: 100%;
+        height:60px;
+        background:#1E90FF;
+        bottom:0;
+    }
+    footer,header{
+        position: absolute;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        background:#00CED1;
+        padding:44px 0 60px 0;
+    }
+    
+    .content{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        
+    }
+    section{
+        height: 900px;
+        background:#FF88C2;
+    }
+     article{
+        height: 900px;
+        background:#FFFF77;
+     }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header></header>
+        <main>
+            <div class="content">
+                <section>
+                    123
+                </section>
+                <article>
+                    456
+                </article>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
